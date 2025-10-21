@@ -2,13 +2,121 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="./src/assets/avator.png" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ammad-Portfolio</title>
+    <title>Ammad - Full Stack Developer</title>
+    
+    <!-- Tailwind CSS 4 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Import Inter font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <style>
+      :root {
+        --gradient-cyan-blue: linear-gradient(to right, #06b6d4, #3b82f6);
+        --gradient-cyan-blue-hover: linear-gradient(to right, #0891b2, #2563eb);
+        --gradient-hero: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #1e40af 100%);
+        --gradient-section: linear-gradient(135deg, #1e293b 0%, #3730a3 50%, #1d4ed8 100%);
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: 'Inter', system-ui, -apple-system, sans-serif;
+        background: #000;
+        color: #fff;
+        overflow-x: hidden;
+      }
+
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 12px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background: #1a1a1a;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: linear-gradient(180deg, #06b6d4, #3b82f6);
+        border-radius: 6px;
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background: linear-gradient(180deg, #0891b2, #2563eb);
+      }
+
+      /* Animations */
+      @keyframes float {
+        0%, 100% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(-20px) rotate(5deg); }
+      }
+
+      @keyframes gradient {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+      }
+
+      @keyframes shine {
+        0% { transform: translateX(-100%) skewX(-15deg); }
+        100% { transform: translateX(200%) skewX(-15deg); }
+      }
+
+      @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
+      }
+
+      .float {
+        animation: float 6s ease-in-out infinite;
+      }
+
+      .animate-gradient {
+        animation: gradient 8s ease infinite;
+        background-size: 300% 300%;
+      }
+
+      .animate-shine {
+        animation: shine 2s ease-in-out infinite;
+      }
+
+      .typewriter {
+        animation: blink 1s infinite;
+      }
+
+      .bg-300 {
+        background-size: 300% 300%;
+      }
+
+      /* Custom gradient classes */
+      .gradient-bg {
+        background: var(--gradient-cyan-blue);
+      }
+
+      .gradient-bg-hover:hover {
+        background: var(--gradient-cyan-blue-hover);
+      }
+
+      .gradient-hero {
+        background: var(--gradient-hero);
+      }
+
+      .gradient-section {
+        background: var(--gradient-section);
+      }
+    </style>
+    
+    <!-- Confetti library -->
     <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.6.0/+esm"></script>
     <script type="module">
       import { confetti } from 'https://cdn.jsdelivr.net/npm/tsparticles-confetti@3.6.0/+esm'
-      
       window.confetti = confetti
     </script>
   </head>
