@@ -288,7 +288,7 @@ const Projects = () => {
         </motion.div>
       </div>
 
-      <style jsx>{`
+      <style>{`
         @keyframes gridSlide {
           0% { transform: translate(0, 0); }
           100% { transform: translate(-80px, -80px); }
