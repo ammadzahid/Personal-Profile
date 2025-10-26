@@ -2,7 +2,8 @@
 import { motion } from 'framer-motion';
 import { useRef, useState } from 'react';
 import { useInView } from 'framer-motion';
-import { FiMail, FiPhone, FiMapPin, FiSend, FiCheck, FiAlertCircle, FiGithub, FiLinkedin, FiTwitter } from 'react-icons/fi';
+import { FiMail, FiPhone, FiMapPin, FiSend, FiCheck, FiAlertCircle, FiGithub, FiLinkedin } from 'react-icons/fi';
+import { SiVercel } from "react-icons/si";
 import emailjs from '@emailjs/browser';
 
 const Contact = () => {
@@ -151,9 +152,9 @@ const Contact = () => {
               className="flex space-x-6 pt-6"
             >
               {[
-                { icon: FiGithub, href: 'https://github.com/gauravbits', color: 'hover:text-cyan-400' },
-                { icon: FiLinkedin, href: 'https://linkedin.com/in/gauravbits', color: 'hover:text-blue-400' },
-                { icon: FiTwitter, href: 'https://twitter.com/gauravbits', color: 'hover:text-purple-400' },
+                { icon: FiGithub,  href: 'https://github.com/ammadzahid?tab=repositories',   color: 'hover:text-cyan-400' },
+                { icon: FiLinkedin,  href: 'https://www.linkedin.com/in/ammad-zahid-615009318/' , color: 'hover:text-blue-400' },
+                { icon: SiVercel,  href: 'https://vercel.com/ammads-projects-e3744709' , color: 'hover:text-purple-400' },
               ].map((social, index) => (
                 <motion.a
                   key={index}

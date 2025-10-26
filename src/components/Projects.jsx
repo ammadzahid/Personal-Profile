@@ -2,28 +2,30 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
 import { FiGithub, FiExternalLink, FiStar, FiCode, FiFolder, FiEye } from 'react-icons/fi';
+import project1 from '../assets/Grocefy.png';
+import project2 from '../assets/Property.png';
 
 const projects = [
   {
     id: 1,
-    title: 'Modern E-Commerce Platform',
-    description: 'A full-stack e-commerce solution with real-time inventory, payment processing, and admin dashboard. Built with microservices architecture and cloud deployment.',
-    image: '/images/ecommerce-project.jpg',
-    technologies: ['React', 'Node.js', 'MongoDB', 'Stripe', 'Docker', 'AWS'],
-    github: 'https://github.com/gauravbits/ecommerce',
-    live: 'https://ecommerce-demo.com',
+    title: 'Smart Online Grocery Shopping Platform',
+    description: 'Grocify is a modern grocery web app built with React and Tailwind CSS, offering a fast, responsive, and seamless shopping experience.',
+    image: project1,
+    technologies: ['React', 'JavaScript', 'Tailwind', 'Framer Motion'],
+    github: 'https://github.com/ammadzahid/Grocify-Website',
+    live: 'https://grocifywebapp.vercel.app/',
     featured: true,
     stars: 142,
-    category: 'Full Stack'
+    category: 'Frontend'
   },
   {
     id: 2,
-    title: 'AI-Powered Task Manager',
-    description: 'Intelligent task management with AI suggestions, team collaboration, and advanced analytics. Features machine learning integration and real-time updates.',
-    image: '/images/taskapp-project.jpg',
-    technologies: ['Next.js', 'Python', 'TensorFlow', 'PostgreSQL', 'Redis', 'WebSocket'],
-    github: 'https://github.com/gauravbits/taskapp',
-    live: 'https://taskapp-demo.com',
+    title: 'Property Sale & Real Estate Platform',
+    description: 'DreamNest is a responsive real estate platform built with HTML , JavaScript and SCSS, designed to help users explore, buy, and sell properties easily with a modern and intuitive interface.',
+    image: project2,
+    technologies: ['HTML', 'SCSS', 'Sass', 'JavaScript'],
+    github: 'https://github.com/ammadzahid/Property_sale_website',
+    live: 'https://property-sale-website-vf7p.vercel.app/',
     featured: true,
     stars: 89,
     category: 'AI/ML'
@@ -39,18 +41,6 @@ const projects = [
     featured: false,
     stars: 67,
     category: 'Data Visualization'
-  },
-  {
-    id: 4,
-    title: 'Blockchain Wallet App',
-    description: 'Secure cryptocurrency wallet with multi-chain support, NFT marketplace integration, and decentralized exchange features.',
-    image: '/images/blockchain-project.jpg',
-    technologies: ['React Native', 'Web3.js', 'Solidity', 'Ethereum', 'IPFS'],
-    github: 'https://github.com/gauravbits/blockchain-wallet',
-    live: 'https://wallet-demo.com',
-    featured: true,
-    stars: 234,
-    category: 'Blockchain'
   }
 ];
 
@@ -178,11 +168,11 @@ const Projects = () => {
                   </div>
 
                   {/* Category Badge */}
-                  <div className="absolute top-4 left-4 z-20">
+                  {/* <div className="absolute top-4 left-4 z-20">
                     <span className="px-3 py-1 bg-cyan-500/20 text-cyan-400 rounded-full text-xs font-bold border border-cyan-400/30 backdrop-blur-sm">
                       {project.category}
                     </span>
-                  </div>
+                  </div> */}
 
                   {/* Hover Overlay with Actions */}
                   <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center space-x-6 z-30">

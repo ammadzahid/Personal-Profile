@@ -1,6 +1,7 @@
 // src/components/Footer.jsx
 import { motion } from 'framer-motion';
-import { FiGithub, FiLinkedin, FiTwitter, FiHeart, FiArrowUp, FiCoffee } from 'react-icons/fi';
+import { FiGithub, FiLinkedin, FiHeart, FiArrowUp, FiCoffee } from 'react-icons/fi';
+import { SiVercel } from "react-icons/si";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -49,9 +50,9 @@ const Footer = () => {
             className="flex justify-center space-x-6"
           >
             {[
-              { icon: FiGithub, href: 'https://github.com/gauravbits', label: 'GitHub' },
-              { icon: FiLinkedin, href: 'https://linkedin.com/in/gauravbits', label: 'LinkedIn' },
-              { icon: FiTwitter, href: 'https://twitter.com/gauravbits', label: 'Twitter' },
+              { icon: FiGithub,  href: 'https://github.com/ammadzahid?tab=repositories', label: 'GitHub' },
+              { icon: FiLinkedin,  href: 'https://www.linkedin.com/in/ammad-zahid-615009318/', label: 'LinkedIn' },
+              { icon: SiVercel,   href: 'https://vercel.com/ammads-projects-e3744709', label: 'Twitter' },
             ].map((social, index) => (
               <motion.a
                 key={index}

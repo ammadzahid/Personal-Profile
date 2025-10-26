@@ -84,6 +84,7 @@ const Hero = () => {
   const launchConfetti = () => {
     if (window.confetti) {
       window.confetti({
+        course: 'pointer',
         particleCount: 150,
         spread: 100,
         origin: { y: 0.6 },
@@ -130,12 +131,13 @@ const Hero = () => {
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
-            className="inline-flex items-center px-6 py-3 rounded-full bg-white/10 backdrop-blur-lg border border-white/20 mb-8 shadow-2xl"
+            className="inline-flex items-center px-6 py-3 rounded-full bg-white/10 backdrop-blur-lg border border-white/20 mb-8 shadow-2xl "
             onMouseEnter={launchConfetti}
             whileHover={{ scale: 1.05, y: -2 }}
+
           >
             <FiCode className="mr-3 text-cyan-400" size={20} />
-            <span className="text-white text-lg font-semibold tracking-wide">Frontend Developer</span>
+            <span className="text-white text-lg font-semibold tracking-wide coursor-pointer">Frontend Developer</span>
             <FiStar className="ml-2 text-yellow-400" size={16} />
           </motion.div>
 
