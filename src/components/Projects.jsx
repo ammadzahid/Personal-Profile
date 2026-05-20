@@ -181,6 +181,7 @@ const Projects = () => {
                       className="bg-white text-gray-900 p-4 rounded-2xl shadow-2xl hover:shadow-cyan-500/25 transition-all"
                       whileHover={{ scale: 1.1, rotate: 5 }}
                       whileTap={{ scale: 0.9 }}
+                      target='_blank'
                     >
                       <FiGithub size={24} />
                     </motion.a>
@@ -189,6 +190,7 @@ const Projects = () => {
                       className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white p-4 rounded-2xl shadow-2xl hover:shadow-cyan-500/25 transition-all"
                       whileHover={{ scale: 1.1, rotate: -5 }}
                       whileTap={{ scale: 0.9 }}
+                      target='_blank'
                     >
                       <FiExternalLink size={24} />
                     </motion.a>
@@ -266,10 +268,11 @@ const Projects = () => {
           className="text-center mt-16"
         >
           <motion.a
-            href="https://github.com/gauravbits"
+            href="https://github.com/ammadzahid"
             className="inline-flex items-center px-12 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-2xl font-black text-lg hover:shadow-2xl hover:shadow-cyan-500/25 transition-all duration-300 border border-cyan-400/20"
             whileHover={{ scale: 1.05, y: -5 }}
             whileTap={{ scale: 0.95 }}
+            target='_blank'
           >
             <FiEye className="mr-3" size={24} />
             View All Projects

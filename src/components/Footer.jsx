@@ -61,6 +61,7 @@ const Footer = () => {
                 whileHover={{ scale: 1.2, y: -5, rotate: 360 }}
                 whileTap={{ scale: 0.9 }}
                 aria-label={social.label}
+                target='_blank'
               >
                 <social.icon 
                   size={24} 

@@ -162,6 +162,7 @@ const Contact = () => {
                   className={`p-4 bg-white/5 rounded-2xl border border-white/10 ${social.color} transition-all duration-300 backdrop-blur-lg`}
                   whileHover={{ scale: 1.1, y: -5, rotate: 360 }}
                   whileTap={{ scale: 0.9 }}
+                  target='_blank'
                 >
                   <social.icon size={24} className="text-white" />
                 </motion.a>

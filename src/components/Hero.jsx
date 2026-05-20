@@ -227,6 +227,7 @@ const Hero = () => {
                 whileHover={{ scale: 1.2, y: -5, rotate: [0, -10, 10, 0] }}
                 whileTap={{ scale: 0.9 }}
                 aria-label={social.label}
+                target='_blank'
               >
                 <social.icon 
                   size={28} 
