@@ -21,26 +21,38 @@ const projects = [
   {
     id: 2,
     title: 'Property Sale & Real Estate Platform',
-    description: 'DreamNest is a responsive real estate platform built with HTML , JavaScript and SCSS, designed to help users explore, buy, and sell properties easily with a modern and intuitive interface.',
+    description: 'DreamNest is a responsive real estate platform built with HTML, JavaScript and SCSS, designed to help users explore, buy, and sell properties easily with a modern and intuitive interface.',
     image: project2,
     technologies: ['HTML', 'SCSS', 'Sass', 'JavaScript'],
     github: 'https://github.com/ammadzahid/Property_sale_website',
     live: 'https://property-sale-website-vf7p.vercel.app/',
     featured: true,
     stars: 89,
-    category: 'AI/ML'
+    category: 'Frontend'
   },
   {
     id: 3,
-    title: 'Real-Time Analytics Dashboard',
-    description: 'Beautiful analytics dashboard with real-time data visualization, custom reports, and team sharing capabilities. Supports multiple data sources.',
-    image: '/images/analytics-project.jpg',
-    technologies: ['Vue.js', 'D3.js', 'Node.js', 'MySQL', 'WebSocket', 'Chart.js'],
-    github: 'https://github.com/gauravbits/analytics',
-    live: 'https://analytics-demo.com',
-    featured: false,
-    stars: 67,
-    category: 'Data Visualization'
+    title: 'EA Solar Project Tracking System',
+    description: 'A comprehensive role-based web application for managing solar energy installation projects. Features a 16-step workflow, file management, deadline tracking, delay reporting, and role-specific PDF reports for Selling, SuperAdmin, Planning, and Team Leader roles.',
+    image: '',
+    technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Vite', 'PHP', 'MySQL'],
+    github: 'https://github.com/ammadzahid/EA_Project_Tracking_System',
+    live: 'https://projecttracking.steelandstyles.com/',
+    featured: true,
+    stars: 95,
+    category: 'Full Stack'
+  },
+  {
+    id: 4,
+    title: 'Al Ghani Fabrics — Brand E-Commerce Store',
+    description: 'A modern brand e-commerce store for Al Ghani Fabrics Co., showcasing premium Pakistani textiles including lawn, khaddar, and silk blends with a clean, responsive design and smooth user experience.',
+    image: '',
+    technologies: ['HTML', 'CSS', 'JavaScript'],
+    github: 'https://github.com/ammadzahid/Alghani_Fabrics',
+    live: 'https://alghani-fabrics.vercel.app',
+    featured: true,
+    stars: 54,
+    category: 'Frontend'
   }
 ];
 
@@ -48,7 +60,7 @@ const Projects = () => {
   const [filter, setFilter] = useState('all');
   const [hoveredProject, setHoveredProject] = useState(null);
 
-  const categories = ['all', 'featured', 'Full Stack', 'AI/ML', 'Data Visualization', 'Blockchain'];
+  const categories = ['all', 'featured', 'Frontend', 'Full Stack'];
 
   const filteredProjects = filter === 'all' 
     ? projects 

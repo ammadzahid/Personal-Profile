@@ -13,7 +13,7 @@ const Header = () => {
       setIsScrolled(window.scrollY > 50);
 
       // Update active section based on scroll position
-      const sections = ['home', 'about', 'projects', 'blog', 'contact'];
+      const sections = ['home', 'about', 'projects', 'contact'];
       const current = sections.find(section => {
         const element = document.getElementById(section);
         if (element) {
@@ -33,7 +33,6 @@ const Header = () => {
     { name: 'Home', href: '#home', icon: FiHome },
     { name: 'About', href: '#about', icon: FiUser },
     { name: 'Projects', href: '#projects', icon: FiFolder },
-    { name: 'Blog', href: '#blog', icon: FiBook },
     { name: 'Contact', href: '#contact', icon: FiMail },
   ];
 
