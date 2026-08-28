@@ -18,8 +18,8 @@ const About = () => {
     { name: 'React.js', level: 90, category: 'Frontend' },
     { name: 'JavaScript', level: 85, category: 'Language' },
     { name: 'Tailwind CSS', level: 88, category: 'Styling' },
-    { name: 'PHP', level: 75, category: 'Backend' },
-    { name: 'MySQL', level: 78, category: 'Database' },
+    { name: 'SEO', level: 75, category: 'Google Ranking' },
+    { name: 'Shopify', level: 78, category: 'App' },
     { name: 'Git/GitHub', level: 85, category: 'Tools' },
   ];
 
